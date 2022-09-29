@@ -44,3 +44,13 @@
   opacity: 0;
   pointer-events: none;
 }
+
+.cell {
+  width: 48px;
+  height: 48;
+  border: 1px;
+}
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3,48px);
+}

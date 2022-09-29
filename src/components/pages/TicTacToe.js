@@ -56,6 +56,9 @@ WinnerCard.propTypes = {
 };
 
 const getWinner = tiles => {
+  tiles =[
+  
+  ]
   // calcular el ganador del partido a partir del estado del tablero
   // (existen varias formas de calcular esto, una posible es listar todos los
   // casos en los que un jugador gana y ver si alguno sucede)
@@ -63,7 +66,7 @@ const getWinner = tiles => {
 };
 
 const useTicTacToeGameState = initialPlayer => {
-  const tiles = [];
+  const tiles = ["","","","","","","","",""];
   const currentPlayer = initialPlayer;
   const winner = getWinner(tiles);
   const gameEnded = false;
@@ -91,4 +94,6 @@ const TicTacToe = () => {
     </div>
   );
 };
+
+
 export default TicTacToe;
